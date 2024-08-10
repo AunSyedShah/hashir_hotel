@@ -1,0 +1,1 @@
+# hashir_hotel
