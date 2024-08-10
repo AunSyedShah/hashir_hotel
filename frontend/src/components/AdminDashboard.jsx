@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import CreateGuestProfile from './CreateGuestProfile';
+import ManageGuestProfiles from './ManageGuestProfiles';
 import { useFormik } from 'formik';
 
 const AdminDashboard = () => {
@@ -90,7 +92,8 @@ const AdminDashboard = () => {
   return (
     <div className="container mx-auto p-4">
       <h1 className="text-2xl font-bold mb-4">Admin Dashboard</h1>
-
+      <CreateGuestProfile/>
+      <ManageGuestProfiles/>
       {/* Form for adding/editing roles and permissions */}
       <form onSubmit={formikRoles.handleSubmit} className="space-y-4 mb-8">
         <div>
